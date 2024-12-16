@@ -75,9 +75,10 @@ project {
             connectionId = "AmazonWebServicesAws_2"
         }
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_20"
+            id = "PROJECT_EXT_21"
             profileId = "amazon-2"
-            name = """"><img src=x onerror=console.log(this)>;"""
+            agentPoolId = "-2"
+            name = "AMI: Ubuntu"
             vpcSubnetId = "subnet-07277bd24d3261745"
             keyPairName = "evie-key-pair"
             instanceType = "t2.medium"
@@ -97,7 +98,7 @@ project {
             terminateIdleMinutes = 0
             region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
             authType = accessKey {
-                keyId = "AKIA5JH2VERVOJZASKLS"
+                keyId = "credentialsJSON:eb866efa-5965-49be-b5be-6ddeb4c55c2f"
                 secretKey = "credentialsJSON:1448a0c5-1c49-48a5-980d-7a2612a7da20"
             }
         }
