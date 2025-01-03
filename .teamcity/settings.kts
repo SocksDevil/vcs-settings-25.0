@@ -77,6 +77,7 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_21"
             profileId = "amazon-2"
+            agentPoolId = "1"
             name = "AMI: Ubuntu"
             vpcSubnetId = "subnet-07277bd24d3261745"
             keyPairName = "evie-key-pair"
@@ -86,6 +87,19 @@ project {
                 "Owner" to "evie.rocha@jetbrains.com"
             )
             source = Source("ami-00309e0e8b974bb124")
+        }
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_4"
+            profileId = "amazon-2"
+            agentPoolId = "-2"
+            name = "AMI: Functional"
+            vpcSubnetId = "subnet-07277bd24d3261745"
+            instanceType = "t2.medium"
+            securityGroups = listOf("sg-0e46a3411dd87de47")
+            instanceTags = mapOf(
+                "Owner" to "evie.rocha@jetbrains.com"
+            )
+            source = Source("ami-09c358ba71fe4ee8b")
         }
         activeStorage {
             id = "PROJECT_EXT_6"
