@@ -77,7 +77,6 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_21"
             profileId = "amazon-2"
-            agentPoolId = "-2"
             name = "AMI: Ubuntu"
             vpcSubnetId = "subnet-07277bd24d3261745"
             keyPairName = "evie-key-pair"
@@ -86,7 +85,7 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-00309e0e8b974bb10")
+            source = Source("ami-00309e0e8b974bb124")
         }
         activeStorage {
             id = "PROJECT_EXT_6"
