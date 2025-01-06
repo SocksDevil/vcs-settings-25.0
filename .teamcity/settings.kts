@@ -77,9 +77,8 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_4"
             profileId = "amazon-2"
-            agentPoolId = "-2"
             name = "AMI: Functional"
-            vpcSubnetId = "subnet-07277bd24d3261745"
+            vpcSubnetId = "subnet-058761d1c673583c8,subnet-07277bd24d3261745"
             instanceType = "t2.medium"
             securityGroups = listOf("sg-0e46a3411dd87de47")
             instanceTags = mapOf(
