@@ -75,19 +75,6 @@ project {
             connectionId = "AmazonWebServicesAws_2"
         }
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_21"
-            profileId = "amazon-2"
-            name = "AMI: Ubuntu"
-            vpcSubnetId = "subnet-07277bd24d3261745"
-            keyPairName = "evie-key-pair"
-            instanceType = "t2.medium"
-            securityGroups = listOf("sg-0e46a3411dd87de47")
-            instanceTags = mapOf(
-                "Owner" to "evie.rocha@jetbrains.com"
-            )
-            source = Source("ami-0ce0782197b4104e8")
-        }
-        amazonEC2CloudImage {
             id = "PROJECT_EXT_4"
             profileId = "amazon-2"
             agentPoolId = "-2"
