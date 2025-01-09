@@ -75,7 +75,7 @@ project {
             connectionId = "AmazonWebServicesAws_2"
         }
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_21"
+            id = "PROJECT_EXT_4"
             profileId = "amazon-2"
             vpcSubnetId = "subnet-07277bd24d3261745"
             instanceType = "t2.medium"
