@@ -75,16 +75,15 @@ project {
             connectionId = "AmazonWebServicesAws_2"
         }
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_22"
+            id = "PROJECT_EXT_24"
             profileId = "amazon-2"
-            agentPoolId = "-2"
             vpcSubnetId = "subnet-058761d1c673583c8,subnet-07277bd24d3261745"
             instanceType = "t2.medium"
             securityGroups = listOf("sg-0e46a3411dd87de47")
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-0c5cc2c3b1970fadb")
+            source = Source("ami-09c358ba71fe4ee8b")
         }
         activeStorage {
             id = "PROJECT_EXT_6"
