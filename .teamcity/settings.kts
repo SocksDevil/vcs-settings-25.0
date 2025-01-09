@@ -84,7 +84,7 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-0bf5a1ee8ed002b22")
+            source = Source("ami-09c358ba71fe4ee8b")
         }
         activeStorage {
             id = "PROJECT_EXT_6"
