@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
@@ -76,6 +77,19 @@ project {
         activeStorage {
             id = "PROJECT_EXT_6"
             activeStorageID = "PROJECT_EXT_14"
+        }
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_9"
+            profileId = "amazon-2"
+            agentPoolId = "-2"
+            name = "Agent"
+            vpcSubnetId = "subnet-07277bd24d3261745"
+            instanceType = "m1.medium"
+            securityGroups = listOf("sg-04e78bc7b27d01c70")
+            instanceTags = mapOf(
+                "Owner" to "evie.rocha@jetbrains.com"
+            )
+            source = Source("ami-09c358ba71fe4ee8b")
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
