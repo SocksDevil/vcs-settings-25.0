@@ -87,22 +87,22 @@ project {
             )
             source = Source("ami-09c358ba71fe4ee8b")
         }
-        activeStorage {
-            id = "PROJECT_EXT_6"
-            activeStorageID = "PROJECT_EXT_14"
-        }
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_9"
+            id = "PROJECT_EXT_21"
             profileId = "amazon-2"
             agentPoolId = "-2"
-            name = "Another profile"
+            name = "Broken"
             vpcSubnetId = "subnet-07277bd24d3261745"
             instanceType = "m1.medium"
             securityGroups = listOf("sg-04e78bc7b27d01c70")
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-09c358ba71fe4ee8b")
+            source = Source("ami-0283f3bb7c377e743")
+        }
+        activeStorage {
+            id = "PROJECT_EXT_6"
+            activeStorageID = "PROJECT_EXT_14"
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
