@@ -91,7 +91,6 @@ project {
             id = "PROJECT_EXT_21"
             profileId = "amazon-2"
             name = "Broken"
-            vpcSubnetId = "subnet-07277bd24d3261745"
             instanceType = "m1.medium"
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
