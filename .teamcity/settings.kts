@@ -90,7 +90,6 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_21"
             profileId = "amazon-2"
-            agentPoolId = "-2"
             name = "Broken"
             vpcSubnetId = "subnet-07277bd24d3261745"
             instanceType = "m1.medium"
@@ -98,7 +97,8 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-0283f3bb7c377e743")
+            customizeLaunchTemplate = true
+            source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         activeStorage {
             id = "PROJECT_EXT_6"
