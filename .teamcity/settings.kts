@@ -92,6 +92,7 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_21"
             profileId = "amazon-2"
+            agentPoolId = "1"
             name = "Broken"
             instanceType = "m1.medium"
             instanceTags = mapOf(
@@ -109,7 +110,7 @@ project {
             id = "amazon-2"
             name = "Test"
             terminateIdleMinutes = 0
-            region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
+            region = AmazonEC2CloudProfile.Regions.EU_WEST_LONDON
             authType = accessKey {
                 keyId = "credentialsJSON:eb866efa-5965-49be-b5be-6ddeb4c55c2f"
                 secretKey = "credentialsJSON:1448a0c5-1c49-48a5-980d-7a2612a7da20"
