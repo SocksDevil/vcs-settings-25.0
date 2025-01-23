@@ -85,6 +85,7 @@ project {
                 "Owner" to "evie.rocha@jetbrains.com"
             )
             customizeLaunchTemplate = true
+            launchTemplateCustomAmi = "ami-09c358ba71fe4ee8b"
             source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "3")
         }
         amazonEC2CloudImage {
