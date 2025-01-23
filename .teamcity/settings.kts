@@ -91,13 +91,13 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_21"
             profileId = "amazon-2"
-            agentPoolId = "1"
             name = "Broken"
             instanceType = "m1.medium"
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
             customizeLaunchTemplate = true
+            launchTemplateCustomAmi = "ami-0e156116442fb16fc"
             source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "2")
         }
         activeStorage {
