@@ -98,7 +98,7 @@ project {
                 "Owner" to "evie.rocha@jetbrains.com"
             )
             customizeLaunchTemplate = true
-            launchTemplateCustomAmi = "ami-060ce2813adada0bb"
+            launchTemplateCustomAmi = "ami-053e4097b27b65c64"
             source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "2")
         }
         activeStorage {
