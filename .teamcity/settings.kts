@@ -110,7 +110,7 @@ project {
             id = "amazon-2"
             name = "Test"
             terminateIdleMinutes = 0
-            region = AmazonEC2CloudProfile.Regions.EU_WEST_LONDON
+            region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
             authType = accessKey {
                 keyId = "credentialsJSON:eb866efa-5965-49be-b5be-6ddeb4c55c2f"
                 secretKey = "credentialsJSON:1448a0c5-1c49-48a5-980d-7a2612a7da20"
