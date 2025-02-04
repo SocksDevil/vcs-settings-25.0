@@ -122,7 +122,10 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = "README.md"
+    artifactRules = """
+        build/meow.txt
+        src/meow.txt
+    """.trimIndent()
 
     vcs {
         root(HttpsGithubComSocksdevilTeamcityAwsLambdaPluginExampleRefsHeadsMain)
