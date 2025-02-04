@@ -125,6 +125,8 @@ object Build : BuildType({
     artifactRules = """
         src/meow.txt
         build/meow.txt
+        big_file.txt
+        LICENSE
     """.trimIndent()
 
     vcs {
