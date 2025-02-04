@@ -123,8 +123,8 @@ object Build : BuildType({
     name = "Build"
 
     artifactRules = """
-        build/meow.txt
         src/meow.txt
+        build/meow.txt
     """.trimIndent()
 
     vcs {
