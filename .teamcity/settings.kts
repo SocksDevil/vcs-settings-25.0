@@ -129,6 +129,7 @@ object Build : BuildType({
         LICENSE
         build/libs/teamcity-aws-lambda-plugin-example-1.0-SNAPSHOT.jar
         build/reports => build/reports
+        huge_file.txt
     """.trimIndent()
 
     vcs {
