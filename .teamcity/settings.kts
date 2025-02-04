@@ -124,7 +124,7 @@ object Build : BuildType({
 
     artifactRules = """
         src/meow.txt
-        build/meow.txt
+        wrapper/meow.txt
         big_file.txt
         LICENSE
         build/libs/teamcity-aws-lambda-plugin-example-1.0-SNAPSHOT.jar
