@@ -127,6 +127,8 @@ object Build : BuildType({
         build/meow.txt
         big_file.txt
         LICENSE
+        build/libs/teamcity-aws-lambda-plugin-example-1.0-SNAPSHOT.jar
+        build/reports => build/reports
     """.trimIndent()
 
     vcs {
