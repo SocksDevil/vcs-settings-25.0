@@ -84,9 +84,7 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            customizeLaunchTemplate = true
-            launchTemplateCustomAmi = "ami-07a804dd17458af2e"
-            source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "3")
+            source = Source("ami-07a804dd17458af2e")
         }
         activeStorage {
             id = "PROJECT_EXT_6"
