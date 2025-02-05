@@ -89,19 +89,6 @@ project {
             launchTemplateCustomAmi = "ami-09c358ba71fe4ee8b"
             source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "3")
         }
-        amazonEC2CloudImage {
-            id = "PROJECT_EXT_21"
-            profileId = "amazon-2"
-            agentPoolId = "1"
-            name = "Broken"
-            instanceType = "m1.medium"
-            instanceTags = mapOf(
-                "Owner" to "evie.rocha@jetbrains.com"
-            )
-            customizeLaunchTemplate = true
-            launchTemplateCustomAmi = "ami-053e4097b27b65c64"
-            source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "2")
-        }
         activeStorage {
             id = "PROJECT_EXT_6"
             activeStorageID = "PROJECT_EXT_14"
