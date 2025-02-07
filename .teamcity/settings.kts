@@ -80,7 +80,7 @@ project {
             name = "Agent"
             vpcSubnetId = "subnet-07277bd24d3261745"
             instanceType = "t3.medium"
-            securityGroups = listOf("sg-04e78bc7b27d01c70")
+            securityGroups = listOf("sg-0e46a3411dd87de47")
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
