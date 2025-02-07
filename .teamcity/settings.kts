@@ -79,7 +79,7 @@ project {
             profileId = "amazon-2"
             name = "Agent"
             vpcSubnetId = "subnet-07277bd24d3261745"
-            instanceType = "m1.medium"
+            instanceType = "m3.medium"
             securityGroups = listOf("sg-04e78bc7b27d01c70")
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
