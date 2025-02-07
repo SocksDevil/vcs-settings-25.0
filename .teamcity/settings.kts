@@ -85,7 +85,6 @@ project {
                 <powershell>
                   Write-Output TestUserData
                 </powershell>
-                <persist>true</persist>
             """.trimIndent()
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
