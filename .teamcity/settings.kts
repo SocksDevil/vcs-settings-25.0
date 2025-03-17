@@ -90,7 +90,8 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-00f58347d39c3f75d")
+            customizeLaunchTemplate = true
+            source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = AmazonEC2CloudImage.LATEST_VERSION)
         }
         activeStorage {
             id = "PROJECT_EXT_6"
