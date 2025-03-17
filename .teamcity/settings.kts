@@ -77,7 +77,6 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_22"
             profileId = "amazon-2"
-            agentPoolId = "-2"
             name = "Agent Meow"
             vpcSubnetId = "subnet-07277bd24d3261745"
             instanceType = "t3.medium"
@@ -87,6 +86,7 @@ project {
                   Write-Output TestUserData
                 </powershell>
             """.trimIndent()
+            useSpotInstances = true
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
