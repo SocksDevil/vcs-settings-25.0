@@ -40,6 +40,10 @@ project {
 
     buildType(Build)
 
+    params {
+        param("teamcity.internal.ec2.lt.amazon-2.Agent Meow.useSpotInstances", "false")
+    }
+
     features {
         awsConnection {
             id = "AmazonWebServicesAws_2"
