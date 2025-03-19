@@ -90,7 +90,7 @@ project {
                 "Owner" to "evie.rocha@jetbrains.com"
             )
             customizeLaunchTemplate = true
-            source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = "5")
+            source = LaunchTemplate(templateId = "lt-03506614ccd5108fb", version = AmazonEC2CloudImage.LATEST_VERSION)
         }
         activeStorage {
             id = "PROJECT_EXT_6"
