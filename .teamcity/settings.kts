@@ -78,9 +78,6 @@ project {
             id = "PROJECT_EXT_15"
             profileId = "amazon-2"
             name = "Agent"
-            vpcSubnetId = "subnet-07277bd24d3261745"
-            instanceType = "t3.medium"
-            securityGroups = listOf("sg-0e46a3411dd87de47")
             userScript = ""
             useSpotInstances = true
             instanceTags = mapOf(
