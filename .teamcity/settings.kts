@@ -86,7 +86,6 @@ project {
             instanceType = "t3.medium"
             securityGroups = listOf("sg-0e46a3411dd87de47")
             userScript = ""
-            useSpotInstances = true
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
