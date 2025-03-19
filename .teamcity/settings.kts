@@ -41,7 +41,7 @@ project {
     buildType(Build)
 
     params {
-        param("teamcity.internal.ec2.lt.amazon-2.Agent.useSpotInstances", "false")
+        param("teamcity.internal.ec2.lt.amazon-2.Agent.useSpotInstances", "true")
     }
 
     features {
