@@ -80,7 +80,7 @@ project {
             agentPoolId = "21"
             name = "Agent"
             vpcSubnetId = "subnet-07277bd24d3261745"
-            instanceType = "t4g.small"
+            instanceType = "t2.small"
             securityGroups = listOf("sg-04e78bc7b27d01c70")
             userScript = ""
             instanceTags = mapOf(
