@@ -90,7 +90,7 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-0516047fd694c7fd6")
+            source = Source("ami-00f58347d39c3f75d")
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_22"
