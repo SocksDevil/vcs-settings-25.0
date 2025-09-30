@@ -43,6 +43,10 @@ project {
     buildType(Build)
     buildType(ImageBuilder)
 
+    params {
+        param("teamcity.internal.ec2.dsl.expireOnUpdate", "false")
+    }
+
     features {
         awsConnection {
             id = "AmazonWebServicesAws_2"
