@@ -101,11 +101,11 @@ project {
                 {
                   "IamFleetRole": "arn:aws:iam::913206223978:role/aws-ec2-spot-fleet-tagging-role",
                   "AllocationStrategy": "capacityOptimized",
-                  "TargetCapacity": 4,
+                  "TargetCapacity": 1,
                   "Type": "request",
                   "LaunchSpecifications": [
                     {
-                      "ImageId": "ami-0d5f3754bbd8ee416",
+                      "ImageId": "ami-038a7a43cbcbadf51",
                       "KeyName": "evie-key-pair",
                       "InstanceType": "t2.micro",
                       "Monitoring": {
