@@ -117,7 +117,7 @@ project {
                           "SubnetId": "subnet-07277bd24d3261745",
                           "DeleteOnTermination": true,
                           "Groups": [
-                            "sg-04e78bc7b27d01c70"
+                            "sg-0e46a3411dd87de47"
                           ],
                           "AssociatePublicIpAddress": true
                         }
