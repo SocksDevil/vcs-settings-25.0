@@ -95,12 +95,42 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_22"
             profileId = "amazon-2"
-            agentPoolId = "-2"
+            agentPoolId = "21"
             name = "Non-existing AMI"
-            vpcSubnetId = "subnet-07277bd24d3261745"
-            instanceType = "t4g.small"
-            securityGroups = listOf("sg-04e78bc7b27d01c70")
-            source = Source("fake-id")
+            source = SpotFleetConfig("""
+                {
+                  "IamFleetRole": "arn:aws:iam::913206223978:role/aws-ec2-spot-fleet-tagging-role",
+                  "AllocationStrategy": "capacityOptimized",
+                  "TargetCapacity": 1,
+                  "Type": "request",
+                  "LaunchSpecifications": [
+                    {
+                      "ImageId": "ami-05329505ae703c87e",
+                      "InstanceType": "t2.micro",
+                      "SubnetId": "subnet-07277bd24d3261745",
+                      "Monitoring": {
+                        "Enabled": true
+                      },
+                      "SecurityGroups": [
+                        {
+                          "GroupId": "sg-04e78bc7b27d01c70,"
+                        }
+                      ],
+                      "TagSpecifications": [
+                        {
+                          "ResourceType": "instance",
+                          "Tags": [
+                            {
+                              "Key": "Owner",
+                              "Value": "evie.rocha@jetbrains.com"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+            """.trimIndent())
         }
         dockerECRRegistry {
             id = "PROJECT_EXT_36"
