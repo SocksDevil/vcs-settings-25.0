@@ -105,7 +105,7 @@ project {
                   "Type": "request",
                   "LaunchSpecifications": [
                     {
-                      "ImageId": "ami-019f19e0a7d38332c",
+                      "ImageId": "ami-05329505ae703c87e",
                       "InstanceType": "t2.micro",
                       "SubnetId": "subnet-07277bd24d3261745",
                       "Monitoring": {
