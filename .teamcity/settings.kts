@@ -114,11 +114,9 @@ project {
                       "NetworkInterfaces": [
                         {
                           "DeviceIndex": 0,
-                          "SubnetId": "subnet-07277bd24d3261745",
+                          "SubnetId": "subnet-007e8bc4f7b4f6f3a",
                           "DeleteOnTermination": true,
-                          "Groups": [
-                            "sg-04e78bc7b27d01c70"
-                          ],
+                          "Groups": [],
                           "AssociatePublicIpAddress": true
                         }
                       ],
