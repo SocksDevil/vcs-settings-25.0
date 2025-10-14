@@ -107,7 +107,7 @@ project {
                     {
                       "ImageId": "ami-0d5f3754bbd8ee416",
                       "KeyName": "evie-key-pair",
-                      "InstanceType": "t2.micro",
+                      "InstanceType": "t3.micro",
                       "Monitoring": {
                         "Enabled": true
                       },
