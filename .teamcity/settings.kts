@@ -105,9 +105,9 @@ project {
                   "Type": "request",
                   "LaunchSpecifications": [
                     {
-                      "ImageId": "ami-00f58347d39c3f75d",
+                      "ImageId": "ami-05329505ae703c87e",
                       "KeyName": "evie-key-pair",
-                      "InstanceType": "t3.medium",
+                      "InstanceType": "t2.micro",
                       "Monitoring": {
                         "Enabled": true
                       },
