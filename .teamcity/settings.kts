@@ -105,18 +105,20 @@ project {
                   "Type": "request",
                   "LaunchSpecifications": [
                     {
-                      "ImageId": "ami-05329505ae703c87e",
+                      "ImageId": "ami-00f58347d39c3f75d",
                       "KeyName": "evie-key-pair",
-                      "InstanceType": "t2.micro",
+                      "InstanceType": "t3.medium",
                       "Monitoring": {
                         "Enabled": true
                       },
                       "NetworkInterfaces": [
                         {
                           "DeviceIndex": 0,
-                          "SubnetId": "subnet-007e8bc4f7b4f6f3a",
+                          "SubnetId": "subnet-07277bd24d3261745",
                           "DeleteOnTermination": true,
-                          "Groups": [],
+                          "Groups": [
+                            "sg-04e78bc7b27d01c70"
+                          ],
                           "AssociatePublicIpAddress": true
                         }
                       ],
