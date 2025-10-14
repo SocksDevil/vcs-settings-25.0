@@ -93,10 +93,10 @@ project {
             source = Source("ami-05329505ae703c87e")
         }
         amazonEC2CloudImage {
-            id = "PROJECT_EXT_22"
+            id = "PROJECT_EXT_33"
             profileId = "amazon-2"
             agentPoolId = "21"
-            name = "Non-existing AMI"
+            name = "SFR"
             source = SpotFleetConfig("""
                 {
                   "IamFleetRole": "arn:aws:iam::913206223978:role/aws-ec2-spot-fleet-tagging-role",
