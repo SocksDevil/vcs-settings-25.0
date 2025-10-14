@@ -107,13 +107,18 @@ project {
                     {
                       "ImageId": "ami-05329505ae703c87e",
                       "InstanceType": "t2.micro",
-                      "SubnetId": "subnet-07277bd24d3261745",
                       "Monitoring": {
                         "Enabled": true
                       },
-                      "SecurityGroups": [
+                      "NetworkInterfaces": [
                         {
-                          "GroupId": "sg-04e78bc7b27d01c70,"
+                          "DeviceIndex": 0,
+                          "SubnetId": "subnet-07277bd24d3261745",
+                          "DeleteOnTermination": true,
+                          "Groups": [
+                            "sg-04e78bc7b27d01c70"
+                          ],
+                          "AssociatePublicIpAddress": true
                         }
                       ],
                       "TagSpecifications": [
