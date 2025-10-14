@@ -101,7 +101,7 @@ project {
                 {
                   "IamFleetRole": "arn:aws:iam::913206223978:role/aws-ec2-spot-fleet-tagging-role",
                   "AllocationStrategy": "capacityOptimized",
-                  "TargetCapacity": 1,
+                  "TargetCapacity": 2,
                   "Type": "request",
                   "LaunchSpecifications": [
                     {
