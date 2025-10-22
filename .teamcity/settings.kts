@@ -93,6 +93,10 @@ project {
             )
             source = Source("ami-05329505ae703c87e")
         }
+        activeStorage {
+            id = "PROJECT_EXT_22"
+            activeStorageID = "DefaultStorage"
+        }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_33"
             profileId = "amazon-2"
@@ -150,10 +154,6 @@ project {
             }
             regionCode = "eu-central-1"
             credentialsType = accessKeys()
-        }
-        activeStorage {
-            id = "PROJECT_EXT_6"
-            activeStorageID = "PROJECT_EXT_14"
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
