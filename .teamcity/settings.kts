@@ -146,14 +146,16 @@ project {
         dockerECRRegistry {
             id = "PROJECT_EXT_36"
             displayName = "Amazon ECR"
-            ecrType = ecrPublic()
+            ecrType = ecrPrivate()
             registryId = "913206223978"
             credentialsProvider = accessKey {
                 accessKeyId = "AKIA5JH2VERVAYHV5RNO"
                 secretAccessKey = "credentialsJSON:5f77bcdc-20b7-4d84-8971-f14dc824a8e7"
             }
-            regionCode = "eu-central-1"
-            credentialsType = accessKeys()
+            regionCode = "eu-west-1"
+            credentialsType = tempCredentials {
+                iamRoleArn = "arn:aws:iam::913206223978:role/ECRMinimalRoleForTC"
+            }
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
