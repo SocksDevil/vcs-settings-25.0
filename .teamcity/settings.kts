@@ -85,6 +85,7 @@ project {
             agentPoolId = "21"
             name = "Agent"
             vpcSubnetId = "subnet-07277bd24d3261745"
+            keyPairName = "evie-key-pair"
             instanceType = "t2.micro"
             securityGroups = listOf("sg-04e78bc7b27d01c70")
             userScript = ""
