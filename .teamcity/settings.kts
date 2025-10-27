@@ -87,7 +87,7 @@ project {
             vpcSubnetId = "subnet-07277bd24d3261745"
             keyPairName = "evie-key-pair"
             instanceType = "t2.micro"
-            securityGroups = listOf("sg-04e78bc7b27d01c70")
+            securityGroups = listOf("sg-0e46a3411dd87de47")
             userScript = ""
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
