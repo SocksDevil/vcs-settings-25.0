@@ -159,6 +159,7 @@ project {
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
+            enabled = false
             name = "Test"
             terminateIdleMinutes = 0
             region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
