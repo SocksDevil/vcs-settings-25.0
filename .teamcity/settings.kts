@@ -197,6 +197,7 @@ object Build : BuildType({
         }
         script {
             id = "gradle_runner"
+            enabled = false
             scriptContent = """
                 #!/bin/bash
                 mkdir folder
