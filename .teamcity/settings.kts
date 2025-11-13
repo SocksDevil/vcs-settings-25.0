@@ -68,7 +68,7 @@ project {
                 roleArn = "arn:aws:iam::913206223978:role/acherenkov-test-s3-role"
                 awsConnectionId = "StaticCredentialsInRoot"
             }
-            allowInBuilds = false
+            allowInBuilds = true
         }
         s3Storage {
             id = "PROJECT_EXT_14"
