@@ -216,7 +216,7 @@ object Build : BuildType({
 
     features {
         provideAwsCredentials {
-            awsConnectionId = "AmazonWebServicesAws_2"
+            awsConnectionId = "IamRoleFromRoot"
         }
     }
 })
