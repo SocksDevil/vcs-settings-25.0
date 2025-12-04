@@ -78,7 +78,6 @@ project {
             awsEnvironment = default {
             }
             connectionId = "AmazonWebServicesAws_2"
-            param("storage.s3.acl", "BucketOwnerFullControl")
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_15"
@@ -94,10 +93,6 @@ project {
                 "Owner" to "evie.rocha@jetbrains.com"
             )
             source = Source("ami-0d5f3754bbd8ee416")
-        }
-        activeStorage {
-            id = "PROJECT_EXT_22"
-            activeStorageID = "DefaultStorage"
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_33"
@@ -158,6 +153,10 @@ project {
             credentialsType = tempCredentials {
                 iamRoleArn = "arn:aws:iam::913206223978:role/ECRMinimalRoleForTC"
             }
+        }
+        activeStorage {
+            id = "PROJECT_EXT_47"
+            activeStorageID = "PROJECT_EXT_14"
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
