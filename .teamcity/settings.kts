@@ -78,6 +78,7 @@ project {
             awsEnvironment = default {
             }
             connectionId = "AmazonWebServicesAws_2"
+            param("storage.s3.acl", "BucketOwnerFullControl")
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_15"
