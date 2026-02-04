@@ -86,7 +86,7 @@ project {
             forceVirtualHostAddressing = true
             awsEnvironment = default {
             }
-            connectionId = "AwsExample_StaticCredentialsSession"
+            connectionId = "IamRoleFromRoot"
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_33"
