@@ -74,7 +74,7 @@ project {
             id = "IamRoleFromRoot"
             name = "IAM Role from Root"
             credentialsType = iamRole {
-                roleArn = "arn:aws:iam::913206223978:role/acherenkov-test-s3-role"
+                roleArn = "arn:aws:iam::913206223978:role/evie-s3-role"
                 awsConnectionId = "AmazonWebServicesAws_2"
             }
             allowInBuilds = true
