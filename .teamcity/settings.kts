@@ -84,9 +84,8 @@ project {
             bucketName = "artifacts-evierocha"
             forceVirtualHostAddressing = true
             awsEnvironment = default {
-                awsRegionName = "eu-west-1"
             }
-            connectionId = "AmazonWebServicesAws_2"
+            connectionId = "IamRoleFromRoot"
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_33"
