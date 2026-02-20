@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
+import jetbrains.buildServer.configs.kotlin.buildFeatures.provideAwsCredentials
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.projectFeatures.activeStorage
@@ -191,6 +192,12 @@ object Build : BuildType({
 
     params {
         param("teamcity.internal.artifactUpload.webPublisher.enableRetrier", "true")
+    }
+
+    features {
+        provideAwsCredentials {
+            id = "NonExistingId"
+        }
     }
 
     vcs {
