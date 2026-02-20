@@ -196,7 +196,7 @@ object Build : BuildType({
 
     features {
         provideAwsCredentials {
-            id = "NonExistingId"
+            awsConnectionId = "NonExistingId"
         }
     }
 
