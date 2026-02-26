@@ -34,7 +34,7 @@ changeProject(DslContext.projectId) {
         }
         feature1.apply {
             profileId = "amazon-2"
-            agentPoolId = "21"
+            agentPoolId = "-2"
             name = "Agent"
             vpcSubnetId = "subnet-07277bd24d3261745"
             keyPairName = "evie-key-pair"
