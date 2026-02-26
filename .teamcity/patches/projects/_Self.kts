@@ -1,8 +1,10 @@
 package patches.projects
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.AmazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.AmazonEC2CloudProfile
 import jetbrains.buildServer.configs.kotlin.Project
+import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -13,7 +15,39 @@ accordingly, and delete the patch script.
 */
 changeProject(DslContext.projectId) {
     features {
-        val feature1 = find<AmazonEC2CloudProfile> {
+        val feature1 = find<AmazonEC2CloudImage> {
+            amazonEC2CloudImage {
+                id = "PROJECT_EXT_60"
+                profileId = "amazon-2"
+                agentPoolId = "1"
+                name = "Agent"
+                vpcSubnetId = "subnet-07277bd24d3261745"
+                keyPairName = "evie-key-pair"
+                instanceType = "t2.micro"
+                securityGroups = listOf("sg-0e46a3411dd87de47")
+                userScript = ""
+                instanceTags = mapOf(
+                    "Owner" to "evie.rocha@jetbrains.com"
+                )
+                source = Source("ami-038a7a43cbcbadf51")
+            }
+        }
+        feature1.apply {
+            profileId = "amazon-2"
+            agentPoolId = "21"
+            name = "Agent"
+            vpcSubnetId = "subnet-07277bd24d3261745"
+            keyPairName = "evie-key-pair"
+            instanceType = "t2.micro"
+            securityGroups = listOf("sg-0e46a3411dd87de47")
+            userScript = ""
+            instanceTags = mapOf(
+                "Owner" to "evie.rocha@jetbrains.com"
+            )
+            source = Source("ami-038a7a43cbcbadf51")
+            param("ebs-optimized", "")
+        }
+        val feature2 = find<AmazonEC2CloudProfile> {
             amazonEC2CloudProfile {
                 id = "amazon-2"
                 name = "Test"
@@ -26,7 +60,7 @@ changeProject(DslContext.projectId) {
                 }
             }
         }
-        feature1.apply {
+        feature2.apply {
             enabled = false
             name = "Test"
             terminateIdleMinutes = 0
