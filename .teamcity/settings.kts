@@ -86,10 +86,6 @@ project {
             }
             connectionId = "AmazonWebServicesAws_2"
         }
-        activeStorage {
-            id = "PROJECT_EXT_29"
-            activeStorageID = "DefaultStorage"
-        }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_33"
             profileId = "amazon-2"
@@ -149,6 +145,10 @@ project {
             credentialsType = tempCredentials {
                 iamRoleArn = "arn:aws:iam::913206223978:role/ECRMinimalRoleForTC"
             }
+        }
+        activeStorage {
+            id = "PROJECT_EXT_46"
+            activeStorageID = "PROJECT_EXT_14"
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_60"
