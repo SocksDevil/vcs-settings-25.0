@@ -85,7 +85,7 @@ project {
             bucketName = "artifacts-evierocha"
             awsEnvironment = default {
             }
-            connectionId = "IamRoleFromRoot"
+            connectionId = "AmazonWebServicesAws_2"
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_33"
