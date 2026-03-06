@@ -53,8 +53,8 @@ project {
             name = "Static Credentials"
             regionName = "eu-west-1"
             credentialsType = static {
-                accessKeyId = "AKIA5JH2VERVOXYZIYJR"
-                secretAccessKey = "credentialsJSON:6eb36be1-c65c-4335-987f-f7bec25f5c4f"
+                accessKeyId = "AKIA5JH2VERVD3VIRVGV"
+                secretAccessKey = "credentialsJSON:4df370a7-37c3-40ec-8587-c2c14edd6993"
                 useSessionCredentials = false
             }
             allowInBuilds = true
