@@ -64,8 +64,8 @@ project {
             id = "AwsExample_StaticCredentialsSession"
             name = "Static Credentials Session"
             credentialsType = static {
-                accessKeyId = "AKIA5JH2VERVCPCRGB5J"
-                secretAccessKey = "credentialsJSON:b9a2ac72-e9a0-4cd4-b9af-701602f48b62"
+                accessKeyId = "AKIA5JH2VERVD3VIRVGV"
+                secretAccessKey = "credentialsJSON:4df370a7-37c3-40ec-8587-c2c14edd6993"
             }
             allowInBuilds = true
         }
