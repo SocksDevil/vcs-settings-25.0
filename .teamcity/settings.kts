@@ -153,7 +153,7 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_60"
             profileId = "amazon-2"
-            agentPoolId = "21"
+            agentPoolId = "-2"
             name = "Agent"
             vpcSubnetId = "subnet-07277bd24d3261745"
             keyPairName = "evie-key-pair"
@@ -163,7 +163,7 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-038a7a43cbcbadf51")
+            source = Source("ami-04eeda87d85e39302")
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
