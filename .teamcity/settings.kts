@@ -163,7 +163,7 @@ project {
             instanceTags = mapOf(
                 "Owner" to "evie.rocha@jetbrains.com"
             )
-            source = Source("ami-04eeda87d85e39302")
+            source = Source("ami-0ac5336994e0ec506")
         }
         amazonEC2CloudProfile {
             id = "amazon-2"
