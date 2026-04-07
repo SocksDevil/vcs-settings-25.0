@@ -276,6 +276,17 @@ object Subproject : Project({
     vcsRoot(Subproject_HttpsGithubComSocksDevilTeamcityAwsLambdaPluginExampleRefsHeadsMain)
 
     buildType(Subproject_Build)
+
+    features {
+        s3Storage {
+            id = "PROJECT_EXT_52"
+            bucketName = "artifacts-evierocha"
+            awsEnvironment = default {
+                awsRegionName = "eu-west-1"
+            }
+            connectionId = "AmazonWebServicesAws_2"
+        }
+    }
 })
 
 object Subproject_Build : BuildType({
