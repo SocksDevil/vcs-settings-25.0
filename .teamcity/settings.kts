@@ -277,6 +277,10 @@ object Subproject : Project({
     buildType(Subproject_Build)
 
     features {
+        activeStorage {
+            id = "PROJECT_EXT_46"
+            activeStorageID = "PROJECT_EXT_14"
+        }
         s3Storage {
             id = "PROJECT_EXT_52"
             storageName = "Subproject S3"
@@ -284,10 +288,6 @@ object Subproject : Project({
             awsEnvironment = default {
             }
             connectionId = "AmazonWebServicesAws_2"
-        }
-        activeStorage {
-            id = "PROJECT_EXT_55"
-            activeStorageID = "PROJECT_EXT_52"
         }
     }
 })
