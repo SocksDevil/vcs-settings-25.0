@@ -57,7 +57,6 @@ project {
                 secretAccessKey = "credentialsJSON:4df370a7-37c3-40ec-8587-c2c14edd6993"
                 useSessionCredentials = false
             }
-            allowInSubProjects = true
             allowInBuilds = true
             stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
         }
