@@ -280,9 +280,9 @@ object Subproject : Project({
     features {
         s3Storage {
             id = "PROJECT_EXT_52"
+            storageName = "Subproject S3"
             bucketName = "artifacts-evierocha"
             awsEnvironment = default {
-                awsRegionName = "eu-west-1"
             }
             connectionId = "AmazonWebServicesAws_2"
         }
