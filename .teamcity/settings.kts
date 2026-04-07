@@ -286,6 +286,10 @@ object Subproject : Project({
             }
             connectionId = "AmazonWebServicesAws_2"
         }
+        activeStorage {
+            id = "PROJECT_EXT_55"
+            activeStorageID = "PROJECT_EXT_52"
+        }
     }
 })
 
