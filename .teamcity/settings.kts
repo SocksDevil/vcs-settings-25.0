@@ -292,7 +292,7 @@ object Subproject_Build : BuildType({
         gradle {
             id = "gradle_runner"
             tasks = "clean build"
-            gradleWrapperPath = ""
+            jdkHome = "%env.JDK_21_0%"
         }
     }
 
