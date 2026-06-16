@@ -203,7 +203,6 @@ object Build : BuildType({
     steps {
         gradle {
             id = "gradle_runner_1"
-            enabled = false
             tasks = "clean build"
             gradleWrapperPath = ""
         }
