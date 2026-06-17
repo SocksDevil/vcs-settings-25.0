@@ -77,7 +77,7 @@ project {
             regionName = "eu-west-1"
             credentialsType = iamRole {
                 roleArn = "arn:aws:iam::913206223978:role/kilina-s3-list-except-us-east-1"
-                awsConnectionId = "AmazonWebServicesAws_2"
+                awsConnectionId = "AwsExample_StaticCredentialsSession"
             }
             allowInSubProjects = true
             allowInBuilds = true
