@@ -76,12 +76,14 @@ project {
         awsConnection {
             id = "AwsExample_NewTryIam"
             name = "New Try IAM"
+            regionName = "eu-west-1"
             credentialsType = iamRole {
                 roleArn = "arn:aws:iam::913206223978:role/kilina-s3-list-except-us-east-1"
                 awsConnectionId = "AwsExample_NewTry"
             }
             allowInSubProjects = true
             allowInBuilds = true
+            stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
         }
         awsConnection {
             id = "AwsExample_StaticCredentialsSession"
