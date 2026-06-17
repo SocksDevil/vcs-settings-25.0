@@ -86,12 +86,14 @@ project {
         awsConnection {
             id = "AwsExample_StaticCredentialsSession"
             name = "Static Credentials Session"
+            regionName = "eu-west-1"
             credentialsType = static {
                 accessKeyId = "AKIA5JH2VERVD3VIRVGV"
                 secretAccessKey = "credentialsJSON:4df370a7-37c3-40ec-8587-c2c14edd6993"
             }
             allowInSubProjects = true
             allowInBuilds = true
+            stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
         }
         awsConnection {
             id = "IamRoleFromRoot"
