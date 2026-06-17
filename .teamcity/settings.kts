@@ -68,6 +68,7 @@ project {
                 accessKeyId = "AKIA5JH2VERVD3VIRVGV"
                 secretAccessKey = "credentialsJSON:4df370a7-37c3-40ec-8587-c2c14edd6993"
             }
+            allowInSubProjects = true
             allowInBuilds = true
         }
         awsConnection {
