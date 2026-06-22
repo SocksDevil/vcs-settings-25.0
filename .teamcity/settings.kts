@@ -178,8 +178,8 @@ project {
             }
         }
         activeStorage {
-            id = "PROJECT_EXT_49"
-            activeStorageID = "DefaultStorage"
+            id = "PROJECT_EXT_55"
+            activeStorageID = "PROJECT_EXT_14"
         }
         amazonEC2CloudImage {
             id = "PROJECT_EXT_60"
