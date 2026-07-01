@@ -169,8 +169,8 @@ project {
             ecrType = ecrPrivate()
             registryId = "913206223978"
             credentialsProvider = accessKey {
-                accessKeyId = "AKIA5JH2VERVAYHV5RNO"
-                secretAccessKey = "credentialsJSON:5f77bcdc-20b7-4d84-8971-f14dc824a8e7"
+                accessKeyId = "AKIA5JH2VERVD3VIRVGV"
+                secretAccessKey = "credentialsJSON:4df370a7-37c3-40ec-8587-c2c14edd6993"
             }
             regionCode = "eu-west-1"
             credentialsType = tempCredentials {
