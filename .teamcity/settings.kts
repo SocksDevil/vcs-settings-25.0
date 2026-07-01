@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
+import jetbrains.buildServer.configs.kotlin.buildFeatures.dockerRegistryConnections
 import jetbrains.buildServer.configs.kotlin.buildFeatures.provideAwsCredentials
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
@@ -257,6 +258,11 @@ object Build : BuildType({
         provideAwsCredentials {
             enabled = false
             awsConnectionId = "AwsExample_StaticCredentialsSession"
+        }
+        dockerRegistryConnections {
+            loginToRegistry = on {
+                dockerRegistryId = "PROJECT_EXT_36"
+            }
         }
     }
 })
