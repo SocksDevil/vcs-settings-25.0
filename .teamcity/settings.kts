@@ -255,6 +255,7 @@ object Build : BuildType({
 
     features {
         provideAwsCredentials {
+            enabled = false
             awsConnectionId = "AwsExample_StaticCredentialsSession"
         }
     }
