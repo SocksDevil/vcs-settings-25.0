@@ -220,6 +220,7 @@ object Build : BuildType({
     artifactRules = """
         big_file.txt
         folder/*.vsix => folder/
+        big_file.txt
     """.trimIndent()
 
     params {
