@@ -115,6 +115,7 @@ project {
             storageName = "Meow"
             bucketName = "artifacts-evierocha"
             awsEnvironment = default {
+                awsRegionName = "us-east-1"
             }
             connectionId = "AmazonWebServicesAws_2"
         }
