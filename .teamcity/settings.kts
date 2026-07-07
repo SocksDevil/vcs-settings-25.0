@@ -114,11 +114,6 @@ project {
             id = "PROJECT_EXT_14"
             storageName = "Meow"
             bucketName = "artifacts-evierocha"
-            cloudFrontEnabled = true
-            cloudFrontUploadDistribution = "E30AAPVJD8HYZG"
-            cloudFrontDownloadDistribution = "E30AAPVJD8HYZG"
-            cloudFrontPublicKeyId = "K2DUYC5XWEXESQ"
-            cloudFrontPrivateKey = "credentialsJSON:0b040191-81d9-4c19-b5db-12dad92d70ad"
             awsEnvironment = default {
                 awsRegionName = "us-east-1"
             }
